@@ -1,7 +1,7 @@
 <div align="center">
 
 <h3><code>ansika@github ~ $ ./bootstrap.sh</code></h3>
-<img src="https://raw.githubusercontent.com/Ansika-Singh/Ansika-Singh/main/boot-sequence.svg?v=2" width="860" />
+<img src="https://raw.githubusercontent.com/Ansika-Singh/Ansika-Singh/main/boot-sequence.svg?v=3" width="860" />
 
 <br><br>
 
@@ -9,7 +9,7 @@
 <table>
   <tr>
     <td valign="top"><img src="./avi-ascii.svg" width="340" /></td>
-    <td valign="top"><img src="./info-card.svg" width="520" /></td>
+    <td valign="top"><img src="https://raw.githubusercontent.com/Ansika-Singh/Ansika-Singh/main/info-card.svg?v=2" width="520" /></td>
   </tr>
 </table>
 
@@ -29,7 +29,7 @@
 
 ### <code>ansika@github ~ $ cat about.md</code>
 
-Third-year Information Science & Engineering student at Cambridge Institute of Technology, Bengaluru. Full-stack and backend developer who has shipped four production applications — including a 1st-prize accessibility platform and a facial-recognition attendance system with real-time anomaly detection — and is now leaning into AI/ML integration through on-device inference and LLM APIs.
+Third-year Information Science & Engineering student at Cambridge Institute of Technology, Bengaluru. Full-stack and backend developer focused on scalable system design, clean backend architecture, and AI/ML integration — who has shipped four production applications (including a 1st-prize accessibility platform and a facial-recognition attendance system with real-time anomaly detection) and is actively working with distributed systems, on-device inference, and LLM APIs.
 
 <br>
 
@@ -69,6 +69,8 @@ drwxr-xr-x   web-dev-intern/             DevStack Technologies      Outstanding 
 | **Frontend** | React.js · Next.js · Vite · Service Workers / PWA |
 | **Backend** | Node.js · Express.js · FastAPI · REST APIs · Auth |
 | **Databases** | MongoDB · PostgreSQL · SQL · IndexedDB · Firebase |
+| **System Design** | Low-Level & High-Level Design (LLD/HLD) · Scalable REST APIs · Microservices · Caching & Indexing |
+| **Problem Solving** | Data Structures & Algorithms (DSA) · LeetCode |
 | **AI/ML** | TensorFlow.js (on-device) · Gemini API |
 | **Tools** | Git/GitHub · Docker · Postman · Vercel · Render · Hugging Face Spaces |
 

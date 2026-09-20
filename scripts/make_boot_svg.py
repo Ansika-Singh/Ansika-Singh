@@ -17,6 +17,7 @@ TITLE = "ansika@DESKTOP: bootstrap.sh"
 LINES = [
     ("OK",   "module: backend-services", "node.js \u00b7 fastapi \u00b7 express"),
     ("OK",   "module: frontend-frameworks", "react \u00b7 next.js \u00b7 vite"),
+    ("OK",   "module: system-design", "lld/hld \u00b7 scalable apis \u00b7 db indexing"),
     ("OK",   "module: ai-ml-integration", "tensorflow.js \u00b7 gemini-api"),
     ("RUN",  "compiling ambition: full-stack \u2192 ai/ml engineer", 81),
     ("RUN",  "problem solving: dsa \u00b7 leetcode", 50),
