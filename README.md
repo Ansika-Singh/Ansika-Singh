@@ -1,7 +1,7 @@
 <div align="center">
 
 <h3><code>ansika@github ~ $ ./bootstrap.sh</code></h3>
-<img src="./boot-sequence.svg" width="860" />
+<img src="https://raw.githubusercontent.com/Ansika-Singh/Ansika-Singh/main/boot-sequence.svg?v=2" width="860" />
 
 <br><br>
 
