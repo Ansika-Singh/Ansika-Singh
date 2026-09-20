@@ -53,7 +53,7 @@ drwxr-xr-x   web-dev-intern/             DevStack Technologies      Outstanding 
 
 ```
 [WIN]    AIdeastorm Hackathon 2026 — 1st Prize — UnifyTalk
-[WIN]    Luminix '26 — Winner
+[WIN]    Luminix '26 — 2nd Prize Winner
 [WIN]    Hackhazards '26 — Winner (Top 100, Namespace track — top 1% of 31,000+ builders)
 [AWARD]  Outstanding Intern Award — DevStack Technologies — Jun 2026
 [COHORT] Infosys Springboard Pragati Cohort 8 — Selected Participant — 2026
