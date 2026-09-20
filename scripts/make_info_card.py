@@ -8,6 +8,7 @@ after the type-in finishes.
 
 Set STATIC=1 for a frozen preview frame.
 """
+import html
 import os
 from pathlib import Path
 
@@ -71,7 +72,7 @@ def build_svg() -> str:
                  fill="freeze" />'''
         label_y = y_cursor
         value_tspans = "".join(
-            f'<tspan x="{VALUE_X}" dy="{0 if j == 0 else SUBLINE_HEIGHT}">{line}</tspan>'
+            f'<tspan x="{VALUE_X}" dy="{0 if j == 0 else SUBLINE_HEIGHT}">{html.escape(line, quote=False)}</tspan>'
             for j, line in enumerate(lines)
         )
         rows.append(f'''
@@ -79,7 +80,7 @@ def build_svg() -> str:
       {anim}
       <rect x="{LEFT_MARGIN - 14}" y="{label_y - 11}" width="3" height="13" rx="1.5" fill="{ACCENT_DIM}" />
       <text x="{LEFT_MARGIN}" y="{label_y}" font-family="{FONT_FAMILY}" font-size="13"
-            font-weight="700" fill="{ACCENT}">{label}</text>
+            font-weight="700" fill="{ACCENT}">{html.escape(label, quote=False)}</text>
       <text x="{VALUE_X}" y="{label_y}" font-family="{FONT_FAMILY}" font-size="12.5"
             fill="{VALUE_COLOR}">{value_tspans}</text>
     </g>''')
@@ -116,7 +117,7 @@ def build_svg() -> str:
   <circle cx="44" cy="24" r="5" fill="#ffbd2e" />
   <circle cx="62" cy="24" r="5" fill="#27c93f" />
   <text x="{WIDTH / 2}" y="29" font-family="{FONT_FAMILY}" font-size="13"
-        fill="{LABEL_COLOR}" text-anchor="middle">{TITLE}</text>
+        fill="{LABEL_COLOR}" text-anchor="middle">{html.escape(TITLE)}</text>
   <line x1="2" y1="42" x2="{WIDTH - 2}" y2="42" stroke="{BORDER_COLOR}" stroke-width="1" />
   {"".join(rows)}
   {cursor}

@@ -9,7 +9,7 @@
 <table>
   <tr>
     <td valign="top"><img src="./avi-ascii.svg" width="340" /></td>
-    <td valign="top"><img src="https://raw.githubusercontent.com/Ansika-Singh/Ansika-Singh/main/info-card.svg?v=2" width="520" /></td>
+    <td valign="top"><img src="https://raw.githubusercontent.com/Ansika-Singh/Ansika-Singh/main/info-card.svg?v=3" width="520" /></td>
   </tr>
 </table>
 

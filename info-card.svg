@@ -33,7 +33,7 @@
       <text x="30" y="60" font-family="'JetBrains Mono', Consolas, monospace" font-size="13"
             font-weight="700" fill="#39d353">💼 Role</text>
       <text x="190" y="60" font-family="'JetBrains Mono', Consolas, monospace" font-size="12.5"
-            fill="#c9d1d9"><tspan x="190" dy="0">Backend Developer</tspan><tspan x="190" dy="19">System Design & AI/ML</tspan></text>
+            fill="#c9d1d9"><tspan x="190" dy="0">Backend Developer</tspan><tspan x="190" dy="19">System Design &amp; AI/ML</tspan></text>
     </g>
     <g opacity="0" transform="translate(-8,0)">
       

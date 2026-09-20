@@ -9,6 +9,7 @@ blinking cursor at the end once it's done.
 
 Set STATIC=1 for a frozen preview frame.
 """
+import html
 import os
 from pathlib import Path
 
@@ -71,13 +72,15 @@ def build_svg() -> str:
         <animate attributeName="opacity" from="0" to="1"
                  begin="{delay}s" dur="0.25s" fill="freeze" />'''
 
+        msg_esc = html.escape(msg, quote=False)
         if isinstance(detail, str):
+            detail_esc = html.escape(detail, quote=False)
             rows.append(f'''
     <g opacity="{opacity_attr}">
       {anim}
       <text x="{LEFT_MARGIN}" y="{y}" font-family="{FONT_FAMILY}" font-size="13" fill="{color}">[{icon}]</text>
-      <text x="{LEFT_MARGIN + 34}" y="{y}" font-family="{FONT_FAMILY}" font-size="13" fill="{LABEL_COLOR}">{msg}</text>
-      <text x="{LEFT_MARGIN + 34 + len(msg) * 7.9 + 14}" y="{y}" font-family="{FONT_FAMILY}" font-size="13" fill="{DETAIL_COLOR}">{detail}</text>
+      <text x="{LEFT_MARGIN + 34}" y="{y}" font-family="{FONT_FAMILY}" font-size="13" fill="{LABEL_COLOR}">{msg_esc}</text>
+      <text x="{LEFT_MARGIN + 34 + len(msg) * 7.9 + 14}" y="{y}" font-family="{FONT_FAMILY}" font-size="13" fill="{DETAIL_COLOR}">{detail_esc}</text>
     </g>''')
         else:
             target_pct = detail if isinstance(detail, (int, float)) else PROGRESS_TARGET
@@ -106,7 +109,7 @@ def build_svg() -> str:
     <g opacity="{opacity_attr}">
       {anim}
       <text x="{LEFT_MARGIN}" y="{y}" font-family="{FONT_FAMILY}" font-size="13" fill="{color}">[{icon}]</text>
-      <text x="{LEFT_MARGIN + 34}" y="{y}" font-family="{FONT_FAMILY}" font-size="13" fill="{LABEL_COLOR}">{msg}</text>
+      <text x="{LEFT_MARGIN + 34}" y="{y}" font-family="{FONT_FAMILY}" font-size="13" fill="{LABEL_COLOR}">{msg_esc}</text>
       <rect x="{bar_x}" y="{y - 10}" width="{bar_w}" height="8" rx="4" fill="#161b22" stroke="{BORDER_COLOR}" stroke-width="1" />
       <rect x="{bar_x}" y="{y - 10}" width="{fill_attr_w}" height="8" rx="4" fill="{PROMPT_COLOR}">{fill_anim}</rect>
       <text x="{bar_x + bar_w + 10}" y="{y}" font-family="{FONT_FAMILY}" font-size="13" fill="{PROMPT_COLOR}" opacity="{label_opacity}">{int(target_pct)}%{label_anim}</text>
