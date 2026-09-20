@@ -18,12 +18,13 @@ LINES = [
     ("OK",   "module: backend-services", "node.js \u00b7 fastapi \u00b7 express"),
     ("OK",   "module: frontend-frameworks", "react \u00b7 next.js \u00b7 vite"),
     ("OK",   "module: ai-ml-integration", "tensorflow.js \u00b7 gemini-api"),
-    ("RUN",  "compiling ambition: full-stack \u2192 ai/ml engineer", None),
+    ("RUN",  "compiling ambition: full-stack \u2192 ai/ml engineer", 81),
+    ("RUN",  "problem solving: dsa \u00b7 leetcode", 50),
     ("OK",   "hackathons indexed", "3 podium finishes"),
     ("OK",   "open-source", "Social Winter of Code contributor \u00b7 Open Source Connect India project admin"),
     ("DONE", "status", "shipping"),
 ]
-PROGRESS_TARGET = 81  # %
+PROGRESS_TARGET = 81  # fallback %
 
 TAG_COLORS = {"OK": "#3fb950", "RUN": "#58a6ff", "DONE": "#bc8cff", "WARN": "#e3b341"}
 TAG_ICON = {"OK": "\u25b8", "RUN": "\u25c9", "DONE": "\u2726", "WARN": "\u25b3"}
@@ -49,6 +50,10 @@ def build_svg() -> str:
     n_lines = len(LINES)
     height = TOP_PADDING + n_lines * LINE_HEIGHT + 40
 
+    # Calculate unified progress bar start position so stacked progress bars align neatly
+    bar_x = round(max(LEFT_MARGIN + 34 + len(msg) * 7.9 + 14 for _, msg, detail in LINES if not isinstance(detail, str)), 1)
+    bar_w = WIDTH - bar_x - 70
+
     rows = []
     for i, (tag, msg, detail) in enumerate(LINES):
         y = TOP_PADDING + i * LINE_HEIGHT
@@ -65,7 +70,7 @@ def build_svg() -> str:
         <animate attributeName="opacity" from="0" to="1"
                  begin="{delay}s" dur="0.25s" fill="freeze" />'''
 
-        if detail is not None:
+        if isinstance(detail, str):
             rows.append(f'''
     <g opacity="{opacity_attr}">
       {anim}
@@ -74,9 +79,8 @@ def build_svg() -> str:
       <text x="{LEFT_MARGIN + 34 + len(msg) * 7.9 + 14}" y="{y}" font-family="{FONT_FAMILY}" font-size="13" fill="{DETAIL_COLOR}">{detail}</text>
     </g>''')
         else:
-            bar_x = LEFT_MARGIN + 34 + len(msg) * 7.9 + 14
-            bar_w = WIDTH - bar_x - 70
-            fill_w = round(bar_w * PROGRESS_TARGET / 100, 1)
+            target_pct = detail if isinstance(detail, (int, float)) else PROGRESS_TARGET
+            fill_w = round(bar_w * target_pct / 100, 1)
             fill_delay = delay + 0.25
             fill_dur = 1.6
             label_delay = fill_delay + fill_dur
@@ -104,7 +108,7 @@ def build_svg() -> str:
       <text x="{LEFT_MARGIN + 34}" y="{y}" font-family="{FONT_FAMILY}" font-size="13" fill="{LABEL_COLOR}">{msg}</text>
       <rect x="{bar_x}" y="{y - 10}" width="{bar_w}" height="8" rx="4" fill="#161b22" stroke="{BORDER_COLOR}" stroke-width="1" />
       <rect x="{bar_x}" y="{y - 10}" width="{fill_attr_w}" height="8" rx="4" fill="{PROMPT_COLOR}">{fill_anim}</rect>
-      <text x="{bar_x + bar_w + 10}" y="{y}" font-family="{FONT_FAMILY}" font-size="13" fill="{PROMPT_COLOR}" opacity="{label_opacity}">{PROGRESS_TARGET}%{label_anim}</text>
+      <text x="{bar_x + bar_w + 10}" y="{y}" font-family="{FONT_FAMILY}" font-size="13" fill="{PROMPT_COLOR}" opacity="{label_opacity}">{int(target_pct)}%{label_anim}</text>
     </g>''')
 
     total_delay = n_lines * LINE_STAGGER
