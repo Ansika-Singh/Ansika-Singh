@@ -1,0 +1,97 @@
+<svg viewBox="0 0 540 354" width="540" height="354"
+     xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="borderGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#39d353" stop-opacity="0.55" />
+      <stop offset="50%" stop-color="#1f6feb" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#39d353" stop-opacity="0.55" />
+    </linearGradient>
+    <linearGradient id="panelBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#11161d" />
+      <stop offset="100%" stop-color="#0d1117" />
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="539" height="353" rx="11"
+        fill="none" stroke="url(#borderGlow)" stroke-width="1.4" />
+  <rect x="2" y="2" width="536" height="350" rx="9"
+        fill="url(#panelBg)" stroke="#30363d" stroke-width="1" />
+  <circle cx="26" cy="24" r="5" fill="#ff5f56" />
+  <circle cx="44" cy="24" r="5" fill="#ffbd2e" />
+  <circle cx="62" cy="24" r="5" fill="#27c93f" />
+  <text x="270.0" y="29" font-family="'JetBrains Mono', Consolas, monospace" font-size="13"
+        fill="#8b949e" text-anchor="middle">ansika@github</text>
+  <line x1="2" y1="42" x2="538" y2="42" stroke="#30363d" stroke-width="1" />
+  
+    <g opacity="0" transform="translate(-8,0)">
+      
+        <animate attributeName="opacity" from="0" to="1"
+                 begin="0.0s" dur="0.4s" fill="freeze" />
+        <animateTransform attributeName="transform" type="translate"
+                 from="-8,0" to="0,0" begin="0.0s" dur="0.4s"
+                 fill="freeze" />
+      <rect x="16" y="49" width="3" height="13" rx="1.5" fill="#1f6feb" />
+      <text x="30" y="60" font-family="'JetBrains Mono', Consolas, monospace" font-size="13"
+            font-weight="700" fill="#39d353">💼 Role</text>
+      <text x="190" y="60" font-family="'JetBrains Mono', Consolas, monospace" font-size="12.5"
+            fill="#c9d1d9"><tspan x="190" dy="0">Backend Developer</tspan><tspan x="190" dy="19">AI/ML Integration</tspan></text>
+    </g>
+    <g opacity="0" transform="translate(-8,0)">
+      
+        <animate attributeName="opacity" from="0" to="1"
+                 begin="0.16s" dur="0.4s" fill="freeze" />
+        <animateTransform attributeName="transform" type="translate"
+                 from="-8,0" to="0,0" begin="0.16s" dur="0.4s"
+                 fill="freeze" />
+      <rect x="16" y="101" width="3" height="13" rx="1.5" fill="#1f6feb" />
+      <text x="30" y="112" font-family="'JetBrains Mono', Consolas, monospace" font-size="13"
+            font-weight="700" fill="#39d353">⚡ Now</text>
+      <text x="190" y="112" font-family="'JetBrains Mono', Consolas, monospace" font-size="12.5"
+            fill="#c9d1d9"><tspan x="190" dy="0">Backend Developer @ One Tappe</tspan><tspan x="190" dy="19">Frontend Developer @ Open Source Connect</tspan><tspan x="190" dy="19">Founder's Office Intern @ NexFellow</tspan></text>
+    </g>
+    <g opacity="0" transform="translate(-8,0)">
+      
+        <animate attributeName="opacity" from="0" to="1"
+                 begin="0.32s" dur="0.4s" fill="freeze" />
+        <animateTransform attributeName="transform" type="translate"
+                 from="-8,0" to="0,0" begin="0.32s" dur="0.4s"
+                 fill="freeze" />
+      <rect x="16" y="172" width="3" height="13" rx="1.5" fill="#1f6feb" />
+      <text x="30" y="183" font-family="'JetBrains Mono', Consolas, monospace" font-size="13"
+            font-weight="700" fill="#39d353">🛠 Stack</text>
+      <text x="190" y="183" font-family="'JetBrains Mono', Consolas, monospace" font-size="12.5"
+            fill="#c9d1d9"><tspan x="190" dy="0">React · Next.js · Node.js</tspan><tspan x="190" dy="19">FastAPI · Python · MongoDB</tspan></text>
+    </g>
+    <g opacity="0" transform="translate(-8,0)">
+      
+        <animate attributeName="opacity" from="0" to="1"
+                 begin="0.48s" dur="0.4s" fill="freeze" />
+        <animateTransform attributeName="transform" type="translate"
+                 from="-8,0" to="0,0" begin="0.48s" dur="0.4s"
+                 fill="freeze" />
+      <rect x="16" y="224" width="3" height="13" rx="1.5" fill="#1f6feb" />
+      <text x="30" y="235" font-family="'JetBrains Mono', Consolas, monospace" font-size="13"
+            font-weight="700" fill="#39d353">🏆 Wins</text>
+      <text x="190" y="235" font-family="'JetBrains Mono', Consolas, monospace" font-size="12.5"
+            fill="#c9d1d9"><tspan x="190" dy="0">3x Hackathon Winner</tspan><tspan x="190" dy="19">AIdeastorm '26 · Luminix '26 · Hackhazards '26</tspan></text>
+    </g>
+    <g opacity="0" transform="translate(-8,0)">
+      
+        <animate attributeName="opacity" from="0" to="1"
+                 begin="0.64s" dur="0.4s" fill="freeze" />
+        <animateTransform attributeName="transform" type="translate"
+                 from="-8,0" to="0,0" begin="0.64s" dur="0.4s"
+                 fill="freeze" />
+      <rect x="16" y="276" width="3" height="13" rx="1.5" fill="#1f6feb" />
+      <text x="30" y="287" font-family="'JetBrains Mono', Consolas, monospace" font-size="13"
+            font-weight="700" fill="#39d353">🎓 Education</text>
+      <text x="190" y="287" font-family="'JetBrains Mono', Consolas, monospace" font-size="12.5"
+            fill="#c9d1d9"><tspan x="190" dy="0">B.E. ISE, CIT Bengaluru '28</tspan></text>
+    </g>
+  
+    <rect x="30" y="314" width="8" height="13" fill="#39d353" opacity="0">
+      <animate attributeName="opacity" from="0" to="0"
+               begin="0s" dur="1.1400000000000001s" fill="freeze" />
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.01;0.5;1"
+               begin="1.1400000000000001s" dur="0.9s" repeatCount="indefinite" />
+    </rect>
+</svg>
