@@ -50,7 +50,7 @@
                  begin="1.5s" dur="0.25s" fill="freeze" />
       <text x="26" y="142" font-family="'JetBrains Mono', Consolas, monospace" font-size="13" fill="#3fb950">[▸]</text>
       <text x="60" y="142" font-family="'JetBrains Mono', Consolas, monospace" font-size="13" fill="#c9d1d9">module: ai-ml-integration</text>
-      <text x="271.5" y="142" font-family="'JetBrains Mono', Consolas, monospace" font-size="13" fill="#6e7681">tensorflow.js · gemini-api</text>
+      <text x="271.5" y="142" font-family="'JetBrains Mono', Consolas, monospace" font-size="13" fill="#6e7681">llms · rag pipelines · model apis</text>
     </g>
     <g opacity="0">
       
@@ -60,10 +60,10 @@
       <text x="60" y="168" font-family="'JetBrains Mono', Consolas, monospace" font-size="13" fill="#c9d1d9">compiling ambition: full-stack → ai/ml engineer</text>
       <rect x="445.3" y="158" width="344.7" height="8" rx="4" fill="#161b22" stroke="#22283a" stroke-width="1" />
       <rect x="445.3" y="158" width="0" height="8" rx="4" fill="#58a6ff">
-        <animate attributeName="width" from="0" to="279.2"
+        <animate attributeName="width" from="0" to="303.3"
                  begin="2.25s" dur="1.6s" fill="freeze"
                  calcMode="spline" keySplines="0.3 0.8 0.3 1" /></rect>
-      <text x="800.0" y="168" font-family="'JetBrains Mono', Consolas, monospace" font-size="13" fill="#58a6ff" opacity="0">81%
+      <text x="800.0" y="168" font-family="'JetBrains Mono', Consolas, monospace" font-size="13" fill="#58a6ff" opacity="0">88%
         <animate attributeName="opacity" from="0" to="1"
                  begin="3.85s" dur="0.3s" fill="freeze" /></text>
     </g>

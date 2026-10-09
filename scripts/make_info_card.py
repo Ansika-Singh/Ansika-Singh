@@ -14,8 +14,8 @@ from pathlib import Path
 
 TITLE = "ansika@github"
 CONTENT = [
-    ("\U0001F4BC Role", ["Backend Developer", "System Design & AI/ML"]),
-    ("\u26A1 Now", ["Backend Developer @ One Tappe", "Frontend Developer @ Open Source Connect", "Founder's Office Intern @ NexFellow"]),
+    ("\U0001F4BC Role", ["AI Developer & Backend Engineer", "LLMs · RAG · System Design"]),
+    ("\u26A1 Now", ["AI Developer Intern @ Tryneu Global Solutions", "Backend Developer @ One Tappe", "Frontend Developer @ Open Source Connect", "Founder's Office Intern @ NexFellow"]),
     ("\U0001F6E0 Stack", ["React · Next.js · Node.js", "FastAPI · Python · MongoDB", "System Design (LLD/HLD)"]),
     ("\U0001F3C6 Wins", ["3x Hackathon Winner", "AIdeastorm '26 · Luminix '26 · Hackhazards '26"]),
     ("\U0001F393 Education", ["B.E. ISE, CIT Bengaluru '28"]),

@@ -1,7 +1,7 @@
 <div align="center">
 
 <h3><code>ansika@github ~ $ ./bootstrap.sh</code></h3>
-<img src="https://raw.githubusercontent.com/Ansika-Singh/Ansika-Singh/main/boot-sequence.svg?v=3" width="860" />
+<img src="https://raw.githubusercontent.com/Ansika-Singh/Ansika-Singh/main/boot-sequence.svg?v=4" width="860" />
 
 <br><br>
 
@@ -9,7 +9,7 @@
 <table>
   <tr>
     <td valign="top"><img src="./avi-ascii.svg" width="340" /></td>
-    <td valign="top"><img src="https://raw.githubusercontent.com/Ansika-Singh/Ansika-Singh/main/info-card.svg?v=3" width="520" /></td>
+    <td valign="top"><img src="https://raw.githubusercontent.com/Ansika-Singh/Ansika-Singh/main/info-card.svg?v=4" width="520" /></td>
   </tr>
 </table>
 
@@ -36,12 +36,14 @@ Third-year Information Science & Engineering student at Cambridge Institute of T
 ### <code>ansika@github ~ $ ls -la experience/</code>
 
 ```
+drwxr-xr-x   ai-developer-intern/        Tryneu Global Solutions    Oct 2026 – Present
 drwxr-xr-x   backend-developer/          One Tappe                  Aug 2026 – Present
 drwxr-xr-x   frontend-developer/         Open Source Connect        Sep 2026 – Present
 drwxr-xr-x   founders-office-intern/     NexFellow (PHICSIT)        Sep 2026 – Dec 2026
 drwxr-xr-x   web-dev-intern/             DevStack Technologies      Outstanding Intern Award
 ```
 
+- **AI Developer Intern @ Tryneu Global Solutions** — Building and evaluating machine learning and LLM models, developing RAG systems and prompt pipelines, and integrating model APIs into production platforms.
 - **Backend Developer @ One Tappe** — Selected for a backend-focused role on a MERN-stack platform; onboarding under technical mentorship ahead of assigned development work.
 - **Frontend Developer @ Open Source Connect** — Built the platform's frontend and implemented mobile responsiveness for an open-source contributor ecosystem projected to reach ~4,000 developers and mentors.
 - **Founder's Office Intern @ NexFellow** — Selected for a fellowship supporting 100 builders, from an applicant pool expected to reach 1,000+ registrations globally.
@@ -71,7 +73,7 @@ drwxr-xr-x   web-dev-intern/             DevStack Technologies      Outstanding 
 | **Databases** | MongoDB · PostgreSQL · SQL · IndexedDB · Firebase |
 | **System Design** | Low-Level & High-Level Design (LLD/HLD) · Scalable REST APIs · Microservices · Caching & Indexing |
 | **Problem Solving** | Data Structures & Algorithms (DSA) · LeetCode |
-| **AI/ML** | TensorFlow.js (on-device) · Gemini API |
+| **AI/ML** | LLMs · RAG Architectures · Prompt Pipelines · TensorFlow.js · Gemini API |
 | **Tools** | Git/GitHub · Docker · Postman · Vercel · Render · Hugging Face Spaces |
 
 <br>
